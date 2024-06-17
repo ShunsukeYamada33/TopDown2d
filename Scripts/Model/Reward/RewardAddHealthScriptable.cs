@@ -1,0 +1,13 @@
+using UnityEngine;
+using System;
+
+[CreateAssetMenu(fileName = "AddHealth", menuName = "Reward/AddHealth")]
+[Serializable]
+public class RewardAddHealthScriptable : RewardScriptable
+{
+    public override void ApplyEffect(PlayerObject player)
+    {
+        // ‚±‚ÌƒŠƒ[ƒh‚ğæ“¾‚µ‚½‚Æ‚«‚ÌŒø‰Ê
+        player.health++;
+    }
+}
